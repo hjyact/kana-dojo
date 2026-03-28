@@ -917,7 +917,7 @@
     "anime": "Chainsaw Man",
     "character": "Denji",
     "issued": false,
-    "completed": false
+    "completed": true
   },
   {
     "id": 93,
@@ -927,7 +927,7 @@
     "anime": "Sailor Moon",
     "character": "Usagi Tsukino",
     "issued": false,
-    "completed": false
+    "completed": true
   },
   {
     "id": 94,
@@ -947,7 +947,7 @@
     "anime": "Bleach",
     "character": "Ichigo Kurosaki",
     "issued": false,
-    "completed": false
+    "completed": true
   },
   {
     "id": 96,
@@ -956,7 +956,7 @@
     "english": "I will become the god of the new world. (alt wording 44)",
     "anime": "Death Note",
     "character": "Light Yagami",
-    "issued": false,
+    "issued": true,
     "completed": false
   },
   {
