@@ -150,8 +150,8 @@ const KanaCards = ({ filter = 'all' }: { filter?: KanaCardsFilter }) => {
   const chevronClasses = (hidden: boolean) =>
     clsx(
       'duration-300 text-(--border-color)',
-      'max-md:group-active:text-(--secondary-color)',
-      'md:group-hover:text-(--secondary-color)',
+      'max-md:group-active:text-(--main-color)',
+      'md:group-hover:text-(--main-color)',
       hidden && 'rotate-180',
     );
 
@@ -174,7 +174,7 @@ const KanaCards = ({ filter = 'all' }: { filter?: KanaCardsFilter }) => {
               <legend
                 className={clsx(
                   'group flex flex-row items-center hover:cursor-pointer',
-                  USE_NEW_KANA_BADGE_DESIGN ? 'gap-2 text-[1.75rem]' : 'gap-1 text-2xl',
+                  USE_NEW_KANA_BADGE_DESIGN ? 'gap-2 text-[1.9rem]' : 'gap-1 text-2xl',
                 )}
                 onClick={() => toggleVisibility(group.name)}
               >
@@ -186,7 +186,7 @@ const KanaCards = ({ filter = 'all' }: { filter?: KanaCardsFilter }) => {
                 )}
                 <h3 className='flex items-center gap-2'>
                   <span>{mainTitle}</span>
-                  <span className='text-(--secondary-color)'>
+                  <span className='hidden text-(--secondary-color) xl:inline'>
                     {japaneseTitle}
                   </span>
                 </h3>
@@ -209,7 +209,7 @@ const KanaCards = ({ filter = 'all' }: { filter?: KanaCardsFilter }) => {
                           className={clsx(
                             'group flex flex-row items-center hover:cursor-pointer',
                             USE_NEW_KANA_BADGE_DESIGN
-                              ? 'gap-2 text-[1.4rem]'
+                              ? 'gap-2 text-[1.5rem]'
                               : 'gap-1 text-xl',
                           )}
                           onClick={() => toggleVisibility(subset.name)}
