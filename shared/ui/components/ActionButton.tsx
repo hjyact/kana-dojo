@@ -18,10 +18,10 @@ const actionButtonVariants = cva(
         secondary: 'border-(--secondary-color-accent)',
       },
       borderRadius: {
-        sm: 'rounded-sm',
-        md: 'rounded-md',
-        lg: 'rounded-lg',
-        xl: 'rounded-xl',
+        'sm': 'rounded-sm',
+        'md': 'rounded-md',
+        'lg': 'rounded-lg',
+        'xl': 'rounded-xl',
         '2xl': 'rounded-2xl',
         '3xl': 'rounded-3xl',
         '4xl': 'rounded-[2rem]',
@@ -118,4 +118,3 @@ const ActionButton = React.forwardRef<HTMLButtonElement, ActionButtonProps>(
 ActionButton.displayName = 'ActionButton';
 
 export { ActionButton, actionButtonVariants };
-

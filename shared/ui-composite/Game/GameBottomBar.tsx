@@ -180,6 +180,22 @@ export const GameBottomBar = ({
               <RotateCcw className='h-8 w-8' />
             ) : showNextButton ? (
               <CircleArrowRight className='h-8 w-8' />
+            ) : USE_NEW_CHECK_ICON ? (
+              <div className='flex h-8 w-8 shrink-0 items-center justify-center rounded-full border-2 border-(--background-color) bg-(--background-color)'>
+                <svg
+                  className='h-5 w-5 text-(--main-color)'
+                  fill='none'
+                  viewBox='0 0 24 24'
+                  stroke='currentColor'
+                >
+                  <path
+                    strokeLinecap='round'
+                    strokeLinejoin='round'
+                    strokeWidth={3}
+                    d='M5 13l4 4L19 7'
+                  />
+                </svg>
+              </div>
             ) : (
               <CircleCheck className='h-8 w-8' />
             )}
